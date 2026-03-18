@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor {
+  width: 600px;
+}
+
+nav {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0077ff;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+button {
+  background: #0077ff;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #005fcc;
+}
+
+input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #f90606;
+  margin-right: 10px;
+}
+
+.mensaje-ok {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.header-app {
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 20px;
+}
+
+.header-app h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.logos {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logos img {
+  height: 50px;
+  width: auto;
+}
+.header-app {
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 20px;
+}
+
+.header-app h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.logos {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logos img {
+  height: 60px;
+  width: auto;
+  transition: transform 0.2s ease;
+}
+
+.logos img:hover {
+  transform: scale(1.1);
+}
+
+
