@@ -1,16 +1,15 @@
-# React + Vite
+## Semana 3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Explicación de como publiqué la aplicación
 
-Currently, two official plugins are available:
+La aplicación se publicó utilizando GitHub Pages. Para ello, primero generé la versión de producción mediante el comando npm run build, que crea los archivos optimizados dentro de la carpeta dist. Después, moví ese contenido a la carpeta docs, que es la que GitHub Pages utiliza como origen para servir la web. También añadí un archivo .nojekyll para evitar que GitHub intentara procesar el proyecto con Jekyll, lo cual impediría que React funcionara correctamente. Finalmente, configuré GitHub Pages para desplegar desde la rama main y la carpeta docs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+- Diferencia entre desarrollo y producción
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+En el entorno de desarrollo, la aplicación se ejecuta mediante npm run dev, que inicia un servidor local con recarga automática y herramientas pensadas para programar de forma rápida. En este modo, el código no está optimizado y está orientado a facilitar la edición continua. En cambio, la versión de producción se genera con npm run build, creando archivos minificados y optimizados para un mejor rendimiento. Esta versión es la que se publica en GitHub Pages y está pensada para ser utilizada por los usuarios finales.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-Estructura general del proyecto
+
+El proyecto se organiza principalmente en la carpeta src, donde se encuentran los componentes, páginas y la lógica de la aplicación escrita en React. La carpeta public contiene recursos estáticos que se copian tal cual al build final. La carpeta docs almacena la versión optimizada generada para GitHub Pages, que es la que se publica en la web. Además, archivos como vite.config.js, package.json e index.html forman parte de la configuración del entorno y definen dependencias, scripts y el comportamiento del proyecto.
