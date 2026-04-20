@@ -3,6 +3,7 @@
 - Explicación de como publiqué la aplicación
 
 La aplicación se publicó utilizando GitHub Pages. Para ello, primero generé la versión de producción mediante el comando npm run build, que crea los archivos optimizados dentro de la carpeta dist. Después, moví ese contenido a la carpeta docs, que es la que GitHub Pages utiliza como origen para servir la web. También añadí un archivo .nojekyll para evitar que GitHub intentara procesar el proyecto con Jekyll, lo cual impediría que React funcionara correctamente. Finalmente, configuré GitHub Pages para desplegar desde la rama main y la carpeta docs.
+https://marcos6-dev.github.io/actividad-3/
 
 
 - Diferencia entre desarrollo y producción

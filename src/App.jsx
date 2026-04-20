@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import PaginaContador from "./PaginaContador";
 import PaginaTareas from "./PaginaTareas";
+import PaginaDirectus from "./PaginaDirectus";
+
 
 function App() {
   return (
@@ -8,7 +10,7 @@ function App() {
 
      
       <header className="header-app">
-        <h1>Actividad-3 – Marcos García Ortiz</h1>
+        <h1>DEMO – Marcos García Ortiz</h1>
 
         <div className="logos">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" />
@@ -20,11 +22,15 @@ function App() {
         <nav>
           <Link to="/">Contador</Link>
           <Link to="/tareas">Tareas</Link>
+          <Link to="/directus">Directus</Link>
+
         </nav>
 
         <Routes>
           <Route path="/" element={<PaginaContador />} />
           <Route path="/tareas" element={<PaginaTareas />} />
+          <Route path="/directus" element={<PaginaDirectus />} />
+
         </Routes>
       </BrowserRouter>
     </div>

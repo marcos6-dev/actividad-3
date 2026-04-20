@@ -24,10 +24,12 @@ function FormularioUsuario() {
     setMensaje("Datos guardados correctamente ✔");
 
     // Vaciar los inputs
+
     setNombre("");
     setCorreo("");
 
     // Quitar mensaje después de 2 segundos
+    
     setTimeout(() => setMensaje(""), 2000);
   };
 

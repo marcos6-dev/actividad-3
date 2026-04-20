@@ -18,6 +18,7 @@ function PaginaTareas() {
       <FormularioUsuario />
       <Formulario alAgregar={agregar} />
       <ListaTareas tareas={tareas} borrar={borrar} />
+      
     </>
   );
 }
